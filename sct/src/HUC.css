@@ -1,0 +1,238 @@
+body {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#000066;
+	line-height:1.5;
+}
+
+h2 {
+	background-color:#000066;
+	color:#FFFFFF;
+	font-size:18px;
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+	border-width:thick;
+	border-color:#000066;
+	border-style:solid;
+
+}
+
+p {
+
+white-space:normal;
+}
+
+h3 {
+	background-color:#CCCCCC;
+	font-size:14px;
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+	border-width:thick;
+	border-color:#CCCCCC;
+	border-style:solid;
+
+}
+
+td {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+th {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+form {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#000066;
+	}
+
+input {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+textarea {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+select {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+ul {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	list-style-type: disc;
+	list-style-position: outside;
+	padding:5;
+}
+
+li {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: .5em 0 .5em 0;
+	vertical-align:middle;
+}
+
+ol {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	list-style-type: upper-roman;
+	list-style-position: outside;
+}
+
+.small {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+}
+
+.big {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+.bodystyle {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.box1 {
+	padding: 3px;
+	border-width: thin;
+	border-style: solid;
+	border-color: #CCCCCC #666666 #666666 #CCCCCC;
+}
+
+.box2 {
+	border-width: 3px;
+	border-style: solid;
+	padding: 5px;
+}
+
+
+a:hover {color: #990000; text-decoration:underline;} /* the mouse "hovers" over the link */
+a:link {color: #990000; text-decoration:underline;} /* unvisited link */
+a:visited {color: #990000; text-decoration:underline;} /* visited link */
+a:active {color: #990000; text-decoration:underline;} 
+
+
+.example{
+   display: none;
+   background-color: #FFFFCC;
+   font-style:normal;
+	white-space:normal;
+   color: #000066;
+   border: groove darkblue 1px;
+   text-align: left;
+   font-family: 'Arial Unicode MS', Gentium, Lucida Sans Unicode, Verdana, sans-serif;
+   font-size: 100%;
+   line-height: 1.3;
+
+   padding: 8px;
+}
+/*a:hover {background: #aaa;}*/
+/* a:hover has to be specifically styled in some way as this is the "event" that leads to the notes being displayed */
+
+a span {display: none}
+/* at first the notes are not visible */
+
+a:hover span.note {
+   display: block;
+   cursor:help;
+   font-style:normal;
+   margin-top:16px;
+   margin-left:25px;
+
+   position: absolute; /* ensures notes overlay, not interrupt the text */
+ 
+   /*left: 100px; */
+   /*top: 100px;*/
+   
+   width: 25em; /* stops notes bleeding off page at right */
+   color: #111;
+   background-color: #FFFFCC;/*#EFF;*/
+   text-align: left;
+   font-family: 'Arial Unicode MS', Gentium, Lucida Sans Unicode, Verdana, sans-serif;
+   font-size: 100%;
+   line-height: 1.3;
+   padding: 8px;
+   
+   border: groove darkblue 1px;
+   z-index: 2; /* in case there are layers elsewhere on the page */}
+
+a:hover span.noteTab {
+   display: block;
+   cursor:help;
+   font-style:normal;
+   margin-top:16px;
+   margin-left:0px;
+
+   position: absolute; /* ensures notes overlay, not interrupt the text */
+ 
+   /*left: 100px; */
+   /*top: 100px;*/
+   
+   width: 25em; /* stops notes bleeding off page at right */
+   color: #111;
+   background-color: #FFFFCC;/*#EFF;*/
+   text-align: left;
+   font-family: 'Arial Unicode MS', Gentium, Lucida Sans Unicode, Verdana, sans-serif;
+   font-size: 100%;
+   line-height: 1.3;
+   padding: 8px;
+   
+   border: groove darkblue 1px;
+   z-index: 2; /* in case there are layers elsewhere on the page */}
+
+.UniFont {
+	font-family: 'Arial Unicode MS',  Lucida Sans Unicode, Tahoma, Gentium, Verdana, sans-serif; 
+	white-space:nowrap;
+}
+
+.example_bullet {
+	font-family: 'Arial Unicode MS',  Lucida Sans Unicode, Tahoma, Gentium, Verdana, sans-serif; 
+	white-space:normal;
+	font-size:14px;
+}
+
+.UniFontTab {
+	font-family: 'Arial Unicode MS',  Lucida Sans Unicode, Tahoma, Gentium, Verdana, sans-serif; 
+	font-size:14px;
+	vertical-align:middle;
+	white-space:nowrap;
+}
+
+
+a.hint:link {color: #0000FF; border-bottom-style:dashed; border-bottom-width:thin; text-decoration:none;}
+a.hint:hover {color: #0000FF; border-bottom-style:dashed; border-bottom-width:thin; text-decoration:none; cursor:help;}
+a.hint:visited {color: #0000FF; border-bottom-style:dashed; border-bottom-width:thin; text-decoration:none;}
+a.hint:active {color: #0000FF; border-bottom-style:dashed; border-bottom-width:thin; text-decoration:none;}
+
+
+a.hintTab:link {color: #0000FF; text-decoration:none}
+a.hintTab:hover {color: #0000FF; cursor:help; ; text-decoration:none}
+a.hintTab:visited {color: #0000FF; text-decoration:none}
+a.hintTab:active {color: #0000FF; text-decoration:none}
+
+a.sups:link {color: #990000; text-decoration:none}
+a.sups:hover {color: #990000;}
+a.sups:visited {color: #990000; }
+a.sups:active {color: #990000;}
+
+a.sups:link div.sups{display:inline-table; border-bottom-style:solid; border-bottom-width:thin; display:table-cell; border-bottom-color: #FFFFFF; border-top-width:thin; border-top-color:#FFFFFF; border-top-style:solid}
+a.sups:hover div.sups{display:inline; border-bottom-style:solid; border-bottom-width:thin; display:table-cell; border-bottom-color: #990000;border-top-width:thin; border-top-color:#FFFFFF; border-top-style:solid}
+a.sups:visited div.sups{display:inline; border-bottom-style:solid; border-bottom-width:thin; display:table-cell; border-bottom-color: #FFFFFF;border-top-width:thin; border-top-color:#FFFFFF; border-top-style:solid}
+a.sups:active div.sups{display:inline; border-bottom-style:solid; border-bottom-width:thin; display:table-cell; border-bottom-color: #990000;border-top-width:thin; border-top-color:#FFFFFF; border-top-style:solid}
+
+div.LRef {
+display:inline;
+margin-right:5px; 
+text-decoration:underline; 
+color:#990000;
+cursor: pointer;
+cursor: hand;
+
+}

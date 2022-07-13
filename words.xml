@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<wordlist>
+
+<r root="">
+	<w lang="Latin" form=""></w>
+	<w lang="Sanskrit" form=""></w>
+	<w lang="Greek" form=""></w>
+	<w lang="OCS" form=""></w>
+	<w lang="German" form=""></w>
+	<w lang="English" form=""></w>
+</r>
+
+<r root="bhreh2">
+	<w lang="Greek" form="bhre/h2te=r" res="phrā́tēr" trans="fellow clansman"></w>
+	<w lang="German" form="bhre/h2te=r" res="Bruder" trans="brother"></w>
+	<w lang="English" form="bhre/h2te=r" res="brother" trans="brother"></w>
+	<w lang="Latin" form="bhre/h2te=r" res="frater" trans="brother"></w>
+	<w lang="Sanskrit" form="bhre/h2te=r" res="bhrā́tā" trans="brother"></w>
+	<w lang="OCS" form="bhre/h2tr-os" res="bratrŭ" trans="brother" comment="The slavic form was changed into an o-stem, based on the Ø-grade of the suffix."></w>
+</r>
+
+<!--
+<r root="deh3">
+	<w form="do-dh3-mi" lang="OCS" comment="The o-reduplication is probably post laryngeal coloring and under the influence of the root eh3 &gt; o" trans="give (1st person present)"></w>
+	<w form="di-deh3-mi" lang="Greek" trans="give (1st person present)"></w>
+</r>
+-->
+
+<r root="dek/mt">
+	<w form="de/k/m" lang="Greek" res="déka" trans="ten"></w>
+	<w form="de/k/m" lang="Latin" res="decem" trans="ten"></w>
+	<w form="de/k/m" lang="German" res="zehen" trans="ten" comment="&lt;b&gt;zehen&lt;/b&gt; was still used in the 19th c., the contracted form &lt;b&gt;zehn&lt;/b&gt; is now standard in NHG"></w>
+	<w form="de/k/m" lang="Sanskrit" res="dáśa" trans="ten"></w>
+	<w form="de/k/m-tis" lang="OCS" res="desętĭ" trans="ten"  comment="The Slavic numerals 5-10 are derived feminine i-stems meaning 'a group of 5, 7, 10' etc."></w>
+</r>
+
+<r value="dheh1">
+	<w form="dhi-dheh1-mi" lang="Greek" res="tit&lt;sup&gt;h&lt;/sup&gt;ēmi" trans="I put" comment="Greek has an reduplicating present"></w>
+	<w form="dhe-dheh1-mi" lang="Sanskrit" res="dadhāmi" trans="I put" comment="The present reduplication vowel was probably remodeled after the stem vowel from -i- to -e- (cf. the Greek form)"></w>
+	<w form="dhe/h1-n-om" lang="German" res="tun" trans="to put, do" comment="The Germanic inifinitive is based on a verbal noun with the suffix -n- and the accusative ending -om"></w>
+	<w form="dhe/h1-n-om" lang="English" res="do" trans="to put, do" comment="The Germanic inifinitive is based on a verbal noun with the suffix -n- and the accusative ending -om"></w>
+	<w form="dheh1-t-ei" lang="OCS" res="dĕti" trans="to do" comment="The Slavic inifinitive is based on a verbal noun with the suffix -t- and the i-stem dative ending -ei."></w>
+	<w form="dhh1-k-io" lang="Latin" res="facio" trans="I do" comment="Latin has a present stem with a -k- suffix and Ø-grade"></w>
+</r>
+
+<r root="dhuHm">
+	<w lang="OCS" form="dhuHm-o/s" res="dymŭ" trans="smoke, vapor"></w>
+	<w lang="Sanskrit" form="dhuHm-o/s" res="dhū́maḥ" trans="smoke, vapor"></w>
+	<w lang="Latin" form="dhuHm-o/s" res="fumus" trans="smoke, fume, steam"></w>
+	<w lang="Greek" form="dhuHm-o/s" res="thӯmós" trans="spirit, soul, breath"></w>
+</r>
+
+<r root="g/enh1">
+	<w form="g/e/nh1-t-es-h2" lang="German" res="Kinder" trans="children" comment="German has an s-stem neuter with the full-grade of the root (cf. other languages). The -s- of the suffix has turned into an -r which is presereved in the plural."></w>
+	<w form="g/nh1-to/s" lang="Sanskrit" res="jātá́ḥ" trans="born, son"></w>
+	<w form="g/nh1-to/s" lang="Latin" res="natus" trans="born, son"></w>
+	<w form="-g/nh1-tos" lang="Greek" res="-gnētos" trans="born" comment="This form is only found in the compound kasí-gnētos 'brother', lit. 'born together'"></w>
+</r>
+
+<!--
+<r root="g/eus">
+	<w form="g/eus-etai" lang="Greek" trans="he chooses" comment="The ending -tai has replaced older -toi by  analogy to the first person -mai"></w>
+	<w form="g/eus-etoi" lang="Sanskrit" trans="he chooses"></w>
+</r>
+-->
+
+<r root="g/heim">
+	<w form="g/heim-eh2" res="zima" lang="OCS" trans="winter"></w>
+	<w form="g/hi/m-eh2" res="hímā" lang="Sanskrit" trans="cold season, winter"></w>
+	<w form="g/heim-o=/n" res="kheimṓn" lang="Greek" trans="winter"></w>
+	<w form="g/hi-e/m-m" res="hiemem" lang="Latin" trans="winter (accusative)" comment="The vowel from the accusative was generalized to the other forms"></w>
+</r>
+
+<r root="g/ombh">
+	<w lang="Greek" form="g/ombh-i/-os" res="gomp&lt;sup&gt;h&lt;/sup&gt;íos" trans="molar tooth"></w>
+	<w lang="OCS" form="g/o/mbh-os" res="zǫbŭ" trans="tooth"></w>
+	<w lang="German" form="g/o/mbh-os" res="Kamm" trans="comb" Comment="The meaning comb is related to the comb's teeth (cf. other languages)"></w>
+	<w lang="English" form="g/o/mbh-os" res="comb" trans="comb" Comment="The meaning comb is related to the comb's teeth (cf. other languages)"></w>
+	<w lang="Sanskrit" form="g/o/mbh-os" res="jámbhaḥ" trans="tooth, jaw"></w>
+</r>
+
+<r root="g/onu">
+	<w lang="Greek" form="g/o/n-u" res="gónu" trans="knee"></w>
+	<w lang="Sanskrit" form="g/o/n-u" res="jā́nu" trans="knee"></w>
+	<w lang="German" form="g/neu/" res="Knie" trans="knee"></w>
+	<w lang="English" form="g/neu/" res="knee" trans="knee"></w>
+	<w lang="Latin" form="g/e/nu" res="genu" trans="knee" comment="The vowel e was probably generalized from other forms, cf. other languages"></w>
+</r>
+
+<r root="gweih3">
+	<w form="gwih3-wos" lang="OCS" res="živŭ" trans="alive"></w>
+	<w form="gwi/h3-wos" lang="Greek" res="bī́os" trans="life"></w>
+	<w form="gwih3-wo/s" lang="Sanskrit" res="jīváḥ" trans="alive, living being"></w>
+	<w form="gwih3-wo/s" lang="Latin" res="vivus" trans="alive"></w>
+</r>
+
+<r root="gwem">
+	<w form="-gwm/-tis" lang="German" res="(An)kunft" trans="coming" comment="In modern German preserved only in compounds,  e.g. &lt;b&gt;An-kunft&lt;/b&gt; 'arrival' etc. (cf. Latin)"></w>
+	<w form="gwm/-tis" lang="Greek" res="básis" trans="a step, stepping stone, base"></w>
+	<w form="h2ed-gwmt-os" lang="Latin" res="adventus" trans="arrival" comment="This form has not been preserved in Latin outside compounds (cf. German)."></w>
+	<w form="gwm/-tis" lang="Sanskrit" res="gátiḥ" trans="a walk, going"></w>
+</r>
+
+<r root="h1ed">
+	<w lang="OCS" form="h1e/d-mi" res="jĕ́mĭ" trans="I eat"></w>
+	<w lang="German" form="h1e/d-oH" res="esse" trans="(I) eat"></w>
+	<w lang="English" form="h1e/d-oH" res="eat" trans="(I) eat"></w>
+	<w lang="Greek" form="h1e/d-oH" res="edō" trans="I eat" comment="Homeric form. The original athematic ending mi was replaced with the  thematic ō &lt; oH"></w>
+	<w lang="Sanskrit" form="h1e/d-mi" res="ádmi" trans="I eat"></w>
+	<w lang="Latin" form="h1e/d-oH" res="edo" trans="I eat" comment="The original athematic ending -mi was replaced with the thematic ō &lt; oH"></w>
+</r>
+
+<r root="h1es">
+	<w lang="OCS" res="jestĭ" form="h1e/s-ti" trans="is"></w>
+	<w lang="German" res="ist" form="h1e/s-ti" trans="is"></w>
+	<w lang="Greek" res="ésti" form="h1e/s-ti" trans="is"></w>
+	<w lang="Sanskrit" res="asti" form="h1e/s-ti" trans="is"></w>
+	<w lang="Latin" res="est" form="h1e/s-t(i)" trans="is" comment="The -i of the original ending *es-ti has been dropped (cf. other languages)"></w>
+</r>
+
+
+<r root="h2eus">
+	<w lang="OCS" res="uxo" form="h2eus-o-m" trans="ear"></w>
+	<w lang="German" res="Ohr" form="h2eus-o/-m" trans="ear"></w>
+	<w lang="English" res="ear" form="h2eus-o/-m" trans="ear"></w>
+	<w lang="Latin" res="auris" form="h2eus-i-s" trans="ear"></w>
+</r>
+
+<!--
+<r root="HwuHps">
+	<w form="HwuHps-ok-os" lang="OCS" trans="high"></w>
+	<w form="Hwu/ps-os" lang="Greek" trans="height"></w>
+</r>
+-->
+
+<r root="iug">
+	<w lang="OCS" res="igo" form="iug-om" trans="yoke"></w>
+	<w lang="Greek" res="zygón" form="iug-o/m" trans="yoke, joining piece"></w>
+	<w lang="Sanskrit" res="yugám" form="iug-o/m" trans="yoke"></w>
+	<w lang="German" res="Joch" form="iug-o/m" trans="yoke"></w>
+	<w lang="English" res="yoke" form="iug-o/m" trans="yoke"></w>
+	<w lang="Latin" res="iugum" form="iug-o/m" trans="yoke"></w>
+</r>
+
+<r root="kwein">
+	<w form="kwoin-e/h2" res="cĕna" lang="OCS" trans="price"></w>
+	<w form="kwoin-e/h2" res="poinḗ" lang="Greek" trans="ransom, price, penalty"></w>
+	<w form="kwe/in-onom" res="whiné" lang="English" trans="whine"></w>
+	<w form="kwe/in-onom" res="weineń" lang="German" trans="cry"></w>
+</r>
+
+<r root="k/luH">
+	<w lang="OCS" res="slytŭ" form="k/luH-to/s" trans="be known, be said, have a reputation" comment="This form is not actually attested in Old Bulgarian, but survives in Modern Russian, cf. слыт"></w>
+	<w lang="Greek" res="klūtós" form="k/luH-to/s" trans="heard of, famous" comment="originally passive participle of the verb 'to hear'"></w>
+	<w lang="Sanskrit" res="śrutáḥ" form="k/luH-to/s" trans="heard (passive participle)"></w>
+	<w lang="German" res="Laut" form="k/luH-to/s" trans="loud"></w>
+	<w lang="English" res="loud" form="k/luH-to/s" trans="loud"></w>
+	<w lang="Latin" res="clutus" form="k/luH-to/s" trans="famous, renowned" comment="cf. also inclitus with prefix in &lt; en"></w>
+</r>
+
+
+<!--
+<r root="legh">
+	<w form="legētei" lang="OCS" trans="lay (infinitive)"></w>
+</r>
+-->
+
+<r root="leuk">
+	<w lang="Greek" res="leuketai" form="leuk-e-tai" trans="becomes white" comment="The ending -tai has replaced older -toi by  analogy to the first person -mai"></w>
+	<w lang="Sanskrit" res="rocate" form="leuk-e-toi" trans="shines"></w>
+	<w lang="OCS" res="luča" form="louk-i-eh2" trans="beam (of light)"></w>
+	<w lang="Latin" res="lux" form="leuk-s" trans="light"></w>
+</r>
+
+<r root="muHs">
+	<w lang="Greek" res="mӯ́s" form="mu/Hs" trans="mouse"></w>
+	<w lang="Sanskrit" res="mū́ḥ" form="mu/Hs" trans="mouse"></w>
+	<w lang="German" res="Maus" form="mu/Hs" trans="mouse"></w>
+	<w lang="English" res="mouse" form="mu/Hs" trans="mouse"></w>
+	<w lang="Latin" res="mus" form="mu/Hs" trans="mouse"></w>
+	<w lang="OCS" res="myšĭ" form="muHs-is" trans="mouse" comment="In Slavic extended into an i-stem by analogy to oblique cases"></w>
+</r>
+
+<r root="neu">
+	<w lang="Greek" res="néos" form="ne/u-os" trans="young"></w>
+	<w lang="Sanskrit" res="návaḥ" form="ne/u-os" trans="new"></w>
+	<w lang="German" res="neu" form="ne/u-i-os" trans="new"></w>
+	<w lang="English" res="new" form="ne/u-i-os" trans="new"></w>
+	<w lang="OCS" res="novŭ" form="ne/u-os" trans="new"></w>
+	<w lang="Latin" res="novus" form="ne/u-os" trans="new"></w>
+</r>
+
+<r root="nokw">
+	<w lang="Greek" res="núx" form="no/kwt-s" trans="night"></w>
+	<w lang="Latin" res="nox" form="no/kwt-s" trans="night"></w>
+	<w lang="Sanskrit" res="náktam" form="no/kwt-om" trans="by night"></w>
+	<w lang="German" res="Nacht" form="no/kwt-is" trans="night"></w>
+	<w lang="OCS" res="noštĭ" form="no/kwt-is" trans="night"></w>
+</r>
+
+<r root="pl">
+	<w lang="Greek" res="patḗr" form="ph2te=/r" trans="father"></w>
+	<w lang="Sanskrit" res="pitā́" form="ph2te=/r" trans="father"></w>
+	<w lang="English" res="father" form="ph2te=/r" trans="father"></w>
+	<w lang="German" res="Vater" form="ph2te=/r" trans="father"></w>
+	<w lang="Latin" res="pátēr" form="ph2te=/r" trans="father"></w>
+</r>
+
+
+<r root="pl">
+	<w lang="Greek" res="platýs" form="plth2u/s" trans="broad"></w>
+	<w lang="Sanskrit" res="pṛthuḥ" form="plth2us" trans="broad"></w>
+</r>
+
+
+<r root="sed">
+	<w form="sed-eh1-t-ei" lang="OCS" res="sĕdĕti" trans="sit (infinitive)"  comment="The suffix -eh&lt;sub&gt;1&lt;/sub&gt;- was used to express verbs of situation, i.e. 'to be seated', cf. sĕsti 'to sit down' &lt; sed-tei"></w>
+	<w form="sed-eh1-oH" lang="Latin" res="sedeo" trans="I sit" comment="The suffix -eh&lt;sub&gt;1&lt;/sub&gt;- was used to express verbs of situation, i.e. 'to be seated', cf. sīdō &lt; si-sd-oH 'to make sit'"></w>	
+	<w form="sed-ie-tai" lang="Greek" res="hezetai" trans="he sits" comment="The ending -tai has replaced older -toi by analogy to the first person -mai"></w>	
+	<w form="se/d-ion-om" lang="German" res="sitzen" trans="to sit"></w>	
+	<w form="se/d-ion-om" lang="English" res="sit" trans="to sit"></w>	
+</r>
+
+<!--
+<r root="seh1m">
+	<w form="seh1men" lang="OCS" trans="seed"></w>
+	<w form="se/h1mo=n" lang="German" trans="seed" comment="The long ō form of the suffix was taken over from the plural"></w>
+	<w form="se/h1mn" lang="Latin" trans="seed"></w>
+</r>
+-->
+
+<r root="septm">
+	<w form="septm/" res="saptá" lang="Sanskrit" trans="seven"></w>
+	<w form="septm/" res="septem" lang="Latin" trans="seven"></w>
+	<w form="septm/" res="heptá" lang="Greek" trans="seven"></w>
+	<w form="septm-is" res="sedmĭ" lang="OCS" trans="seven" comment="The Slavic numerals 5-10 are derived feminine i-stems meaning 'a group of 5, 7, 10' etc."></w>
+</r>
+
+<r root="sekw">
+	<w form="sekw-e-toi" res="sacate" lang="Sanskrit" trans="He follows"></w>
+	<w form="sekw-o-mai" res="hepomai" lang="Greek" trans="I follow" comment="-mai by analogy to active -mi etc."></w>
+	<w form="sekw-o-r" res="sequor" lang="Latin" trans="I follow" comment="The origins of the Latin medium endings in -r is disputed."></w>
+	<w form="se/kw-onom" res="sehen" lang="German" trans="to see (&lt; to follow)"></w>
+	<w form="se/kw-onom" res="see" lang="English" trans="to see (&lt; to follow)"></w>
+</r>
+
+<r root="snoigwh-os">
+	<w form="s-noigwh-os" res="snĕgŭ" lang="OCS" trans="snow"></w>
+	<w form="s-noi/gwh-os" res="Schnee" lang="German" trans="snow"></w>
+	<w form="s-noi/gwh-os" res="snow" lang="English" trans="snow"></w>
+	<w form="s-ni/gwh-m" res="nípha" lang="Greek" trans="snow (accusative)" comment="The initial s-mobile would have disappeared regularly, but may never have been there in Greek - cf. the Latin form. This stem is only attested in the accusative nipha; the nominative would have been nips"></w>
+	<w form="ni/gwh-m" res="nivem" lang="Latin" trans="snow (accusative)" comment="Latin has no s-mobile in this word. The accusative is given for comparison with Greek; the nominative is 'nix' &lt; *nig&lt;sup&gt;ṷh&lt;/sup&gt;s."></w>
+</r>
+
+<r root="supn">
+	<w form="suepn-os" res="svapnaḥ" lang="Sanskrit" trans="sleep" comment="Latin and Sanskrit show a full grade of this stem"></w>
+	<w form="supn-os" res="sŭnŭ" lang="OCS" trans="sleep" comment="OCS and Greek show a Ø-grade of this stem"></w>
+	<w form="su/pn-os" res="hýpnos" lang="Greek" trans="sleep" comment="OCS and Greek show a Ø-grade of this stem"></w>
+	<w form="sue/pn-os" res="somnus" lang="Latin" trans="sleep" comment="Latin and Sanskrit show a full grade of this stem"></w>
+</r>
+
+<r root="tod">
+	<w form="tod" res="to" lang="OCS" trans="this (neuter)"></w>
+	<w form="tod" res="to" lang="Greek" trans="this, the (neuter)"></w>
+	<w form="tod" res="tad" lang="Sanskrit" trans="this (neuter)"></w>
+	<w form="h1id-tod" res="istud" lang="Latin" trans="that (neuter)" comment="Latin has compounded two pronouns (somewhat like Eng. 'that there')"></w>
+	<w form="to/d" res="dass" lang="German" trans="that, the (neuter)"></w>
+	<w form="to/d" res="that" lang="English" trans="that"></w>
+</r>
+
+<r root="wid">
+	<w form="woi/d-mi" res="vĕmĭ" lang="OCS" trans="I know (&lt; I have seen)" comment="The athematic -mi ending has replaced the older perfect ending"></w>
+	<w form="woi/d-h2e" res="oĩda" lang="Greek" trans="I know (&lt; I have seen)"></w>
+	<w form="woi/d-h2e" res="véda" lang="Sanskrit" trans="I know (&lt; I have seen)"></w>
+	<w form="wi/d-s" res="wit" lang="English" trans="wit" comment="The verb from this root has been lost, cf. German"></w>
+	<!--<w form="woi/d-h2e-i" res="vidi" lang="Latin" trans="I have seen" comment="The origin of the added final -i is uncertain"></w>-->
+	<w form="woi/d-(h2e)" res="weiss" lang="German" trans="(I) know (&lt; I have seen)" comment="The personal endings have been dropped in 1st and 3rd person strong preterits"></w>
+</r>
+
+<!--
+<r root="wleh2nos">
+	<w form="wleh2n-os" lang="Greek" trans="wool"></w>
+</r>
+-->
+
+</wordlist>

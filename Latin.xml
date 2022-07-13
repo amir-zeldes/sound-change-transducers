@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<transducer>
+
+<ruleset message="Laryngeal coloring" desc="/e/ &gt; /a/ next to /h2/ &lt;br&gt;/e/ &gt; /o/ next to /h3/. &lt;br&gt; See also laryngeals.">
+	<rule pat="e(/?)h2" replace="a\1h2"></rule>
+	<rule pat="e(/?)h3" replace="o\1h3">	</rule>
+	<rule pat="h2e" replace="h2a"></rule>
+	<rule pat="h3e" replace="h3o"></rule>
+</ruleset>
+
+<ruleset message="Laryngeal vocalization">
+	<rule pat="([^aeiouāēīōūh/]|^|[kg]/|[bdg]h)([lmnr])(?:H|h[123])([^aeiouāēīōū]|$)" replace="\1\2ā\3"></rule>
+	<rule pat="([^aeiouāēīōūh/]|^|[kg]/|[bdg]h)([lmnr])(?:H|h[123])([aeiouāēīōū]|$)" replace="\1a\2\3"></rule>
+	<rule pat="([^aeiouāēīōūh/]|^|[kg]/|[bdg]h)(?:H|h[123])([^aeiouāēīōū]|$)" replace="\1a\2"></rule>
+</ruleset>
+
+<ruleset message="Laryngeal lengthening" desc="Laryngeals lengthen a preceding vowel and disappear.">
+	<rule pat="u(/?)[hH]([123])?" replace="ū\1"></rule>
+	<rule pat="i(/?)[hH]([123])?" replace="ī\1"></rule>
+	<rule pat="e(/?)[hH]([123])?" replace="ē\1"></rule>
+	<rule pat="o(/?)[hH]([123])?" replace="ō\1"></rule>
+	<rule pat="a(/?)[hH]([123])?" replace="ā\1"></rule>
+</ruleset>
+
+<ruleset message="Vocalize syllabic nasals">
+	<rule pat="([^aeiouāēīōū/]|[kg]/)([mn])([^aeiouāēīōū]|$)" replace="\1e\2\3"></rule>
+</ruleset>
+
+<ruleset message="Vocalize syllabic resonants">
+	<rule pat="([^aeiouāēīōū/]|[kg]/)([rl])([^aeiouāēīōū]|$)" replace="\1o\2\3"></rule>
+</ruleset>
+
+<ruleset message="Drop laryngeals">
+	<rule pat="(H|h[1-3])" replace=""></rule>
+</ruleset>
+
+<ruleset message="Simplify dhgh > gh">
+	<rule pat="dhgh" replace="gh"></rule>
+</ruleset>
+
+<ruleset message="Initial eN &gt; iN">
+	<rule pat="^e([nm])" replace="i\1"></rule>
+</ruleset>
+
+<ruleset message="Centumization" desc="Palatovelars &gt; Velars (see also centum languages)">
+	<rule pat="([kg])/(h?)" replace="\1\2"></rule>
+</ruleset>
+
+<ruleset message="Dissimilate dt > st">
+	<rule pat="dt" replace="st"></rule>
+</ruleset>
+
+<ruleset message="e > o in 1st syllable" desc="In the first syllable: &lt;br&gt; e &gt; o before ṷ, mo, and l (except li, le) &lt;br&gt;  ṷe &gt; o if the next syllable has the vowel o">
+	<rule pat="^([ptkbdghwfslmnr]+|i|u)e(/?)u(/?[aeiouāēīōū])" replace="\1o\2u\3"></rule>
+	<rule pat="^([ptkbdghwfslmnr]+|i|u)e(/?)l([aou]|ā|ō|ū)" replace="\1o\2l\3"></rule>
+	<rule pat="^([ptkbdghwfslmnr]+|i|u)e(/?)m(o|ō)" replace="\1o\2m\3"></rule>
+	<rule pat="^([ptkbdghwfslmnr]+)ue(/?[ptkbdghwfslmnr]+o)" replace="\1o\2"></rule>
+</ruleset>
+
+<ruleset message="om > um in 1st syllable">
+	<rule pat="^([ptkbdghwfslmnr]+|i|u)o(/?)m" replace="\1u\2m"></rule>
+</ruleset>
+
+<ruleset message="pn > mn">
+	<rule pat="pn" replace="mn"></rule>
+</ruleset>
+
+<ruleset message="a, o > e, u in closed middle syllables">
+	<rule pat="([aeiou]|ā|ē|ī|ō|ū)([ptkbdghwfslmnr]+|i|u)a(/?[ptkbdghwfslmnr][ptkbdghwfslmnr])([aeiou]|ā|ē|ī|ō|ū)" replace="\1\2e\3\4"></rule>
+	<rule pat="([aeiou]|ā|ē|ī|ō|ū)([ptkbdghwfslmnr]+|i|u)o(/?[ptkbdghwfslmnr][ptkbdghwfslmnr])([aeiou]|ā|ē|ī|ō|ū)" replace="\1\2u\3\4"></rule>
+</ruleset>
+
+<ruleset message="vowels in open middle syllable > i">
+	<rule pat="([aeiou]|ā|ē|ī|ō|ū)(/?[ptkbdghwfslmnr]+|i|u)(?:[aeou]|ā|ē|ī|ō|ū)(/?[ptkbdghwfslmnr])([aeiou]|ā|ē|ī|ō|ū)" replace="\1\2i\3\4"></rule>
+</ruleset>
+
+<ruleset message="Assimilate i in open middle syllables">
+	<rule pat="([aeiou]|ā|ē|ī|ō|ū)(/?[ptkbdghwfslmnr]+|i|u)(?:[aeio]|ā|ē|ī|ō|ū)(/?u)([aeiou]|ā|ē|ī|ō|ū)" replace="\1\2u\3\4"></rule>
+	<rule pat="([aeiou]|ā|ē|ī|ō|ū)(/?[ptkbdghwfslmnr]+|i|u)(?:[aeio]|ā|ē|ī|ō|ū)(/?l)([aou]|ā|ō|ū)" replace="\1\2u\3\4"></rule>
+	<rule pat="([aeiou]|ā|ē|ī|ō|ū)(/?[ptkbdghwfslmnr]+|i|u)(?:[aeio]|ā|ē|ī|ō|ū)(/?[pbf])([aeiou]|ā|ē|ī|ō|ū)" replace="\1\2u\3\4"></rule>
+	<rule pat="([aeiou]|ā|ē|ī|ō|ū)(/?[ptkbdghwfslmnr]+|i|u)(?:[aiou]|ā|ē|ī|ō|ū)(/?r)([aeiou]|ā|ē|ī|ō|ū)" replace="\1\2e\3\4"></rule>
+	<rule pat="i(?:[aio]|ā|ē|ī|ō|ū)(/?[ptkbdghwfslmnr])([aeiou]|ā|ē|ī|ō|ū)" replace="ie\1\2"></rule> <!--no iu (iugom *iegom)-->
+	<rule pat="i(?:[aei]|ā|ē|ī|ō|ū)(/?l)([aou]|ā|ō|ū)" replace="io\1\2"></rule> <!--no iu (iugom *iogom)-->
+</ruleset>
+
+<ruleset message="Narrow closed final syllables" desc="&lt;b&gt;In closed final syllables:&lt;/b&gt;&lt;br&gt;oC# &gt; uC#&lt;br&gt;eC# &gt; iC#&lt;br&gt;aC# &gt; eC#">
+	<rule pat="([ptkbdghwfslmnr]+|i|u)o(/?(?:[ptkbdghwfslmn]))$" replace="\1u\2"></rule> <!-- nox not nux sequor not -ur-->
+	<rule pat="([ptkbdghwfslmnr]+|i|u)e(/?(?:[ptkbdghwfslr]+))$" replace="\1i\2"></rule> <!--not applicable to n,m (decem *decim, semen *semin)-->
+	<rule pat="([ptkbdghwfslmnr]+|i|u)a(/?(?:[ptkbdghwfslmnr]+))$" replace="\1e\2"></rule>
+</ruleset>
+
+<ruleset message="Shorten ēC# > eC#">
+	<rule pat="ē([ptkbdghwfslmnr])$" replace="e\1"></rule>
+</ruleset>
+
+<ruleset message="Drop final n in ōn# > ō#">
+	<rule pat="ōn$" replace="ō"></rule>
+</ruleset>
+
+<!--due : bo in duenos bonus? Beekes66-->
+
+<ruleset message="Semivowels">
+	<rule pat="([^kg]|^)[uṷw]([aeiouāēīōū])" replace="\1v\2"></rule>
+	<rule pat="([aeiou]|ā|ē|ī|ō|ū)i([aeiou]|ā|ē|ī|ō|ū)" replace="\1j\2"></rule>
+</ruleset>
+
+<ruleset message="Labiovelars">
+	<rule pat="kw([uptkbdglmnrs])" replace="k\1"></rule>
+	<rule pat="^gwh" replace="f"></rule>
+	<rule pat="gwh?([uoptkbdglmnrs])" replace="g\1"></rule>
+	<rule pat="ngwh?([uoptkbdglmnrs])" replace="ngu\1"></rule>
+	<rule pat="gwh?" replace="v"></rule>
+</ruleset>
+
+<ruleset message="gs > ks">
+	<rule pat="gs" replace="ks"></rule>
+</ruleset>
+
+<ruleset message="Loss of aspirates">
+	<rule pat="^[bd]h" replace="f"></rule>
+	<rule pat="([ur])dh" replace="\1b"></rule>
+	<rule pat="dh([rl])" replace="b\1"></rule>
+	<rule pat="([bd])h" replace="\1"></rule>
+	<rule pat="^gh" replace="h"></rule>
+	<rule pat="([aeiou]|ā|ē|ī|ō|ū)(/?)gh([aeiou]|ā|ē|ī|ō|ū)" replace="\1\2h\3"></rule>
+</ruleset>
+
+<ruleset message="Drop -j- between vowels">
+	<rule pat="([aeiou]|ā|ē|ī|ō|ū)(/?)j([aeiou]|ā|ē|ī|ō|ū)" replace="\1\2\3"></rule>
+</ruleset>
+
+<ruleset message="Simplify clusters">
+	<rule pat="^gn" replace="n"></rule>
+	<rule pat="kts" replace="ks"></rule>
+</ruleset>
+
+<ruleset message="Assimilate clusters">
+	<rule pat="m([td])" replace="n\1"></rule>
+	<rule pat="n([mpbf])" replace="m\1"></rule>
+	<rule pat="[dt]k" replace="kk"></rule>
+	<rule pat="[mn]l" replace="ll"></rule>
+</ruleset>
+
+<ruleset message="Monophthongization">
+	<rule pat="(ei|ēi|ōi)" replace="ī"></rule>
+	<rule pat="(oi|eu|ou|ēu)" replace="ū"></rule>
+</ruleset>
+
+<ruleset message="ai >ae">
+	<rule pat="(ai|āi)" replace="ae"></rule>
+</ruleset>
+
+<ruleset message="Rhotacism" desc="s > r between vowels">
+	<rule pat="([aeiou]|ā|ē|ī|ō|ū)(/?)s([aeiou]|ā|ē|ī|ō|ū)" replace="\1\2r\3"></rule>
+</ruleset>
+
+<ruleset message="Lower 1st syllable i/u before r">
+	<rule pat="^([ptkbdghwfvjslmnr]+)i(/?r)" replace="\1e\2"></rule>
+	<rule pat="^([ptkbdghwfvjslmnr]+)u(/?r)" replace="\1o\2"></rule>
+</ruleset>
+
+<ruleset message="Latin stress rule" desc="The third last syllable was stressed, or the second last if it was long or followed by two consonants">
+	<rule pat="([aeiou]|ā|ē|ī|ō|ū)((?:[ptkbdghwfvjslmnr])*)([aeiou])/?((?:[ptkbdghwfvjslmnr])*)([aeiou]|ā|ē|ī|ō|ū)/?((?:[ptkbdghwfvjslmnr])*)$" replace="\1/\2\3\4\5\6"></rule>
+	<rule pat="([aeiou]|ā|ē|ī|ō|ū)/?((?:[ptkbdghwfvjslmnr])*)(ā|ē|ī|ō|ū)((?:[ptkbdghwfvjslmnr])*)([aeiou]|ā|ē|ī|ō|ū)/?((?:[ptkbdghwfvjslmnr])*)$" replace="\1\2\3/\4\5\6"></rule>
+	<rule pat="([aeiou]|ā|ē|ī|ō|ū)/?((?:[ptkbdghwfvjslmnr])*)([aeiou])((?:[ptkbdghwfvjslmnr][ptkbdghwfvjslmnr]+))([aeiou]|ā|ē|ī|ō|ū)/?((?:[ptkbdghwfvjslmnr])*)$" replace="\1\2\3/\4\5\6"></rule>
+	<rule pat="^((?:[ptkbdghwfvjslmnr])*)([aeiou]|ā|ē|ī|ō|ū)((?:[ptkbdghwfvjslmnr])*)([aeiou]|ā|ē|ī|ō|ū)/?((?:[ptkbdghwfvjslmnr])*)$" replace="\1\2/\3\4\5"></rule>
+	<rule pat="^i([aeiou]|ā|ē|ī|ō|ū)((?:[ptkbdghwfvjslmnr])*)([aeiou]|ā|ē|ī|ō|ū)/?((?:[ptkbdghwfvjslmnr])*)$" replace="i\1/\2\3\4"></rule>
+</ruleset>
+
+<ruleset message="Projected Latin spelling">
+	<rule pat="ks" replace="x"></rule>
+	<rule pat="kw" replace="qu"></rule>
+	<rule pat="k" replace="c"></rule>
+	<rule pat="j" replace="i"></rule>
+	<rule pat="ā" replace="a"></rule>
+	<rule pat="ē" replace="e"></rule>
+	<rule pat="ī" replace="i"></rule>
+	<rule pat="ō" replace="o"></rule>
+	<rule pat="ū" replace="u"></rule>
+	<rule pat="/" replace=""></rule>
+</ruleset>
+
+</transducer>

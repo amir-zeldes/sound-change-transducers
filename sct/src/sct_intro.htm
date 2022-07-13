@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Sound Change Transducers</title>
+<link href="HUC.css" rel="stylesheet" type="text/css">
+<meta http-equiv="Content-type" value="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 16px;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+<body>
+
+<h2>&nbsp; Sound Change Transducers</h2>
+<h3>What are these Sound Change Transducers? </h3>
+<p>The term &quot;sound change&quot; refers to the consistent developments of the sounds of a language over time, which are said to be governed by <a href="http://en.wikipedia.org/wiki/Sound_laws">sound change laws</a>. For example, the words &quot;wear&quot; and &quot;where&quot; used to be pronounced differently (which is why they are written differently), but gradual sound changes have caused them to be pronounced identically in Modern English (though some British dialects still pronounce the latter as &quot;hwer&quot;). In many cases, related words which derive from a common origin can be identified in different languages by retracing these consistent sound changes, and this common form (the "proto-form") can then be reconstructed.</p>
+<p><a href="http://en.wikipedia.org/wiki/Finite_state_transducer">Finite state transducers</a> are a computational device which allows the transformation of a series of symbols into another series of symbols, one step at a time. A transducer is given an input and  then checks if the input contains certain symbols, which it can replace with other symbols. </p>
+<p>In this site you can find <a href="sct.php">sound change transducers</a>: a set of online <a href="http://en.wikipedia.org/wiki/Regular_expressions">regular expression</a> based finite state transducers, which model sound change laws in several <a href="http://en.wikipedia.org/wiki/Indo-European_languages">Indo-European</a> languages (e.g. replacing an old 'hw' sound in &quot;where&quot; with the more recent 'w' sound). Currently supported are: </p>
+<ul>
+  <li>Classical Greek (the Attic dialect)</li>
+  <li>English</li>
+  <li>German</li>
+  <li>Latin</li>
+  <li>Old Church Slavonic (a.k.a. Old Bulgarian) </li>
+  <li>Sanskrit</li>
+</ul>
+
+<p>I hope to get more languages up and running in the future. </p>
+<p>The transducers are deterministic, and only model regular, predictable sound changes: in many cases the forms found attested in different languages are the result of analogy, which is not taken into account here. In cases where two different developments for the same sound are known with no clear rules governing their distribution, I have attempted to select the more common one. </p>
+<p>At the moment there is <strong>no option to attempt an automatic reconstruction</strong> of proto forms from modern words in any language (i.e. to go from new word to old), although it might be interesting to try and build such an algorithm in the future. </p>
+<p>This is a work in progress, and numerous sound changes are still missing, misphrased or misordered; I am grateful for corrections and suggestions in general.</p>
+<p align="center"><a href="sct.php" class="style1">Enter Sound Change Transducers</a> </p>
+
+<h3>How to use the Transducers</h3>
+<p><strong>Important note</strong>: </p>
+<p>In order to correctly view this page, a <strong>unicode font</strong> is required (e.g. on Windows PC's <em>Arial Unicode</em>). If you do not have such a font and the page does not display correctly, you can download the unicode font <a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&item_id=Gentium_download">gentium</a> free of charge under the SIL open font license. </p>
+<p><strong>Instructions for the transducer page</strong>: </p>
+<table width="720" style="border-width:medium; border-style:solid; padding:10; border-color:#000099; background-color: #FFFFCC">
+  <tr><td width="787">
+<ul>
+  <li>Select a language from the drop-down list. </li>
+  <li>The &quot;Examples&quot; box offers some words which occur in several of the languages modelled here. </li>
+  <li>Choose one of the examples or use <b><a href="sct_help.htm">these conventions</a></b> to type your own input in the &quot;Proto form&quot; field. </li>
+  <li>The &quot;Translation&quot; box gives the sense of the derived word in the target language. </li>
+  <li>Related forms in other languages appear below the derivation. </li>
+<li>If you're trying to find the proto-form of a word, use <a href="IE_Correspondences.php"><strong>this table</strong></a> and the explanation there. </li>
+</ul>
+</td></tr></table>
+<p align="center"><a href="sct.php" class="style1">Enter Sound Change Transducers</a> </p>
+&copy; 2007-2008 <a href="http://corpling.uis.georgetown.edu/amir/">Amir Zeldes </a>
+</p>
+</body>
+</html>

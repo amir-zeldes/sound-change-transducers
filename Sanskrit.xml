@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<transducer>
+
+<ruleset message="Laryngeal coloring" desc="/e/ &gt; /a/ next to /h2/ &lt;br&gt;/e/ &gt; /o/ next to /h3/. &lt;br&gt; See also Laryngeals">
+	<rule pat="e(/?)h2" replace="a\1h2"></rule>
+	<rule pat="e(/?)h3" replace="o\1h3">	</rule>
+	<rule pat="h2e" replace="h2a"></rule>
+	<rule pat="h3e" replace="h3o">	</rule>
+</ruleset>
+
+<ruleset message="Vocalize syllabic nasals">
+	<rule pat="([^aeiouāēīōūrl/]|[kg]h?/|^)m[Hh][1-3]?(/?[^aeiouāēīōūrl])" replace="\1ān\2"></rule>
+	<rule pat="([^aeiouāēīōūrl/]|[kg]h?/|^)n[Hh][1-3]?(/?[^aeiouāēīōūrl])" replace="\1ā\2"></rule>
+	<rule pat="([^aeiouāēīōūrl/]|[kg]h?/|^)[mn][Hh][1-3]?(/?[aeiouāēīōūrl])" replace="\1a\2\3"></rule>
+	<rule pat="([^aeiouāēīōūrl/]|[kg]h?/|^)[mn](/?[^aeiouāēīōūrl]|$)" replace="\1a\2"></rule>
+</ruleset>
+
+<ruleset message="Brugmann's law" desc="&lt;b&gt;Bruggmann's law&lt;/b&gt;&lt;br&gt;o is lengthened in open syllables">
+	<rule pat="o(/?[^aeiouāēīōū][aeiouāēīōū])" replace="ō\1"></rule>
+</ruleset>
+
+<ruleset message="Tenues aspiratae" desc="Voiceless stops followed by h&lt;sub&gt;2&lt;/sub&gt; and a vowel are aspirated:&lt;br&gt;Th&lt;sub&gt;2&lt;/sub&gt;V &gt; T&lt;sup&gt;h&lt;/sup&gt;V">
+	<rule pat="([tkp])h2([aeiou]|ā|ē|ī|ō|ū)" replace="\1h\2"></rule>
+</ruleset>
+<ruleset message="Laryngeal vocalization">
+	<rule pat="([ptkbdgslmnr]w?/?h?)h[1-3]([ptkbdgslmnr])" replace="\1i\2"></rule>
+</ruleset>
+
+<ruleset message="Laryngeal lengthening" desc="Laryngeals lengthen a preceding vowel and disappear.">
+	<rule pat="u(/?)[hH]([123])?" replace="ū\1"></rule>
+	<rule pat="i(/?)[hH]([123])?" replace="ī\1"></rule>
+	<rule pat="e(/?)[hH]([123])?" replace="ē\1"></rule>
+	<rule pat="o(/?)[hH]([123])?" replace="ō\1"></rule>
+	<rule pat="a(/?)[hH]([123])?" replace="ā\1"></rule>
+</ruleset>
+
+<ruleset message="Vocalize syllabic laryngeals">
+	<rule pat="([^aeo])(H|h[1-3])(/?[^aeo])" replace="\1a\3"></rule>
+</ruleset>
+
+
+<ruleset message="Drop laryngeals">
+	<rule pat="(H|h[1-3])" replace=""></rule>
+</ruleset>
+
+<ruleset message="Bartholomae's law" desc="&lt;b&gt;Bartholomae's law&lt;/b&gt;&lt;br&gt;An aspirate followed by a voiceless stop loses aspiration, and the following stop becomes voiced and aspirated:&lt;br&gt;D&lt;sup&gt;h&lt;/sup&gt;T &gt; DD&lt;sup&gt;h&lt;/sup&gt;">
+	<rule pat="([bdg]/?w?)ht" replace="\1dh"></rule>
+	<rule pat="([bdg]/?w?)hp" replace="\1bh"></rule>
+	<rule pat="([bdg]/?w?)hk" replace="\1gh"></rule>
+</ruleset>
+
+<ruleset message="Grassmann's law" desc="&lt;b&gt;Grassman's law - Aspiration dissimilation &lt;/b&gt;&lt;br&gt;The first of two aspirates in consecutive syllables become deaspirated:&lt;br&gt;D&lt;sup&gt;h&lt;/sup&gt;vD&lt;sup&gt;h&lt;/sup&gt; &gt; DvD&lt;sup&gt;h&lt;/sup&gt;">
+	<rule pat="([bdg])h(.?([aeiou]|ā|ē|ī|ō|ū))(bh|dh|gh)" replace="\1\2\4"></rule>
+</ruleset>
+
+<ruleset message="Satemization" desc="Labiovelars &gt; Velars  &lt;br&gt; Palatovelars are further palatalized &lt;br&gt;(see also satem languages)">
+	<rule pat="sk/" replace="cch"></rule>
+	<rule pat="k/" replace="ś"></rule>
+	<rule pat="g/h" replace="h"></rule>
+	<rule pat="g/" replace="j"></rule>
+	<rule pat="([kg])w(h?)" replace="\1\2"></rule>
+</ruleset>
+
+<ruleset message="Palatalization" desc="Velars are palatalized before front vowels">
+	<rule pat="k([ieīē])" replace="c\1"></rule>
+	<rule pat="g([ieīē])" replace="j\1"></rule>
+	<rule pat="gh([ieīē])" replace="h\1"></rule>
+</ruleset>
+
+<ruleset message="RUKI rule" desc="s &gt; ṣ after r, u, k, i &lt;br&gt;(except in final position or before /r/. Also, /s/ or /m/ may intervene)">
+	<rule pat="([rukiīū]/?)s([ptkbgdlmnhjśaeiouāēīōū])" replace="\1ṣ\2"></rule>
+</ruleset>
+
+<ruleset message="l > r">
+	<rule pat="l([\.ptkbgdlmnrhjś])" replace="r.\1"></rule>
+	<rule pat="^(ś)?l" replace="\1r"></rule>
+</ruleset>
+
+<ruleset message="Semivowels">
+	<rule pat="[uṷw]([aeiouāēīōū])" replace="v\1"></rule>
+	<rule pat="i([aeiouāēīōū])" replace="y\1"></rule>
+</ruleset>
+
+<ruleset message="Vowel syncretism" desc="e, o &gt; a &lt;br&gt;ē, ō &gt; ā">
+	<rule pat="[eo]" replace="a"></rule>
+	<rule pat="(ē|ō)" replace="ā"></rule>
+</ruleset>
+
+
+<ruleset message="Monophthongization">
+	<rule pat="ai" replace="e"></rule>
+	<rule pat="au" replace="o"></rule>
+</ruleset>
+
+<ruleset message="Long diphthongs">
+	<rule pat="āi" replace="ai"></rule>
+	<rule pat="āu" replace="au"></rule>
+</ruleset>
+
+<ruleset message="Ending restrictions" desc="In final position:&lt;br&gt;Clusters are shortened to the first consonant&lt;br&gt;ār &gt; ā (r-stems)&lt;br&gt;Vs, Vr &gt; Vḥ (visarga)">
+	<rule pat="([ptkbdgjśṣlmnrvych]|[ptkbdg]h)([ptkbdgjśṣlmnrvych]|[ptkbdg]h)+$" replace="\1"></rule>
+	<rule pat="ā(/?)r$" replace="ā\1"></rule>
+	<rule pat="s$" replace="ḥ"></rule>
+</ruleset>
+
+<ruleset message="Retroflex substitution">
+	<rule pat="(r|ṛ|ṣ)n([mnyvaeiou]|ā|ē|ī|ai|au|ū)" replace="\1ṇ\2"></rule>
+	<rule pat="(r|ṛ|ṣ)((?:[mhpkbgyvaeiou]|ā|ē|ī|ai|au|ū|[pbkg]h)+)n([mnyvaeiou]|ā|ē|ī|ai|au|ū)" replace="\1\2ṇ\3"></rule>
+	<rule pat="(ṣ|ṇ)([tdns])" replace="\1\2̣"></rule>
+</ruleset>
+
+<ruleset message="Anusvara">
+	<rule pat="([aeiou]|ā|ē|ī|ai|au|ū)m([ptkbdgjśṣlmnrvych])" replace="\1ṁ\2"></rule>
+</ruleset>
+
+</transducer>

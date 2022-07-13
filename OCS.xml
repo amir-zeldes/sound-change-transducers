@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<transducer>
+
+<ruleset message="Laryngeal coloring" desc="/e/ &gt; /a/ next to /h2/ &lt;br&gt;/e/ &gt; /o/ next to /h3/. &lt;br&gt; See also Laryngeals">
+	<rule pat="e(/?)h2" replace="a\1h2"></rule>
+	<rule pat="e(/?)h3" replace="o\1h3">	</rule>
+	<rule pat="h2e" replace="h2a"></rule>
+	<rule pat="h3e" replace="h3o"></rule>
+</ruleset>
+
+<ruleset message="Hirt's law" desc="&lt;b&gt;Hirt's law&lt;/b&gt;&lt;br&gt;Unstressed vowels followed by laryngeals draw back the accent:&lt;br&gt;vHv́ &gt; v́Hv">
+	<rule pat="([aeiou]|ā|ē|ī|ō|ū)(H|h[1-3])(.+(?:[aeiou]|ā|ē|ī|ō|ū))/" replace="\1/\2\3"></rule>
+</ruleset>
+
+<ruleset message="Laryngeal lengthening" desc="Laryngeals lengthen a preceding vowel and disappear.">
+	<rule pat="u(/?)[hH]([123])?" replace="ū\1"></rule>
+	<rule pat="i(/?)[hH]([123])?" replace="ī\1"></rule>
+	<rule pat="e(/?)[hH]([123])?" replace="ē\1"></rule>
+	<rule pat="o(/?)[hH]([123])?" replace="ō\1"></rule>
+	<rule pat="a(/?)[hH]([123])?" replace="ā\1"></rule>
+</ruleset>
+
+<ruleset message="Vocalize syllabic laryngeals">
+	<rule pat="([^aeo])(H|h[1-3])(/?[^aeo])" replace="\1a\3"></rule>
+</ruleset>
+
+<ruleset message="Drop laryngeals">
+	<rule pat="(H|h[1-3])" replace=""></rule>
+</ruleset>
+
+<ruleset message="Regressive devoicing">ḷ
+	<rule pat="gs" replace="ks"></rule>
+</ruleset>
+
+<ruleset message="Syllabic resonants" desc="When not next to a vowel: &lt;br&gt;/l/, /m/, /n/, /r/ are preceded by u">
+	<rule pat="([ptkbgdslmnrjw]h?|^|[kg]/)([lmnr]\.?)(/?)([ptkbgdhslmnrjw]|$)" replace="\1u\3\2\4"></rule>
+</ruleset>
+
+<ruleset message="Winter's law" desc="&lt;b&gt;Winter's law&lt;/b&gt;&lt;br&gt;e, a, o are lengthened before voiced stops">ḷ
+	<rule pat="o(/?[bgd][^h])" replace="ō\1"></rule>
+	<rule pat="e(/?[bgd][^h])" replace="ē\1"></rule>
+	<rule pat="a(/?[bgd][^h])" replace="ā\1"></rule>
+</ruleset>
+
+<ruleset message="Deaspiration">
+	<rule pat="([bdg]|g/|gw)h" replace="\1"></rule>
+</ruleset>
+
+<ruleset message="Satemization" desc="Palatovelars &gt; Sibilants &lt;br&gt; Labiovelars &gt; Velars &lt;br&gt;(see also satem languages)">
+	<rule pat="k/" replace="s"></rule>
+	<rule pat="g/" replace="z"></rule>
+	<rule pat="([kg])w" replace="\1"></rule>
+</ruleset>
+
+<ruleset message="RUKI rule" desc="s &gt; x after r, u, k, i &lt;br&gt;(in Slavic generally followed by a vowel)">
+	<rule pat="((?:r|u|ū|ī|k|i)/?)s([aeiou]|ā|ē|ī|ō|ū)" replace="\1x\2"></rule>
+</ruleset>
+
+<ruleset message="Assimilate euV > ouV">
+	<rule pat="e(/?)u(/?[aeiouāēīōū])" replace="o\1u\2"></rule>
+</ruleset>
+
+<ruleset message="Regressive voice assimilation">
+	<rule pat="ptm" replace="bdm"></rule>
+</ruleset>
+
+<ruleset message="Semivowels v and j">
+	<rule pat="[wuṷ](/?)([aeiouāēīōū])" replace="\1v\2"></rule>
+	<rule pat="i(/?)([aeiouāēīōū])" replace="\1j\2"></rule>
+</ruleset>
+
+<ruleset message="First palatalization" desc="Velars are palatalized before front vowels">
+	<rule pat="kē" replace="čā"></rule>
+	<rule pat="gē" replace="žā"></rule>
+	<rule pat="xē" replace="šā"></rule>
+	<rule pat="k([iīe])" replace="č\1"></rule>
+	<rule pat="g([iīe])" replace="ž\1"></rule>
+	<rule pat="x([iīe])" replace="š\1"></rule>
+	<rule pat="sk([iīeē])" replace="št\1"></rule>
+	<rule pat="zg([iīeē])" replace="žd\1"></rule>
+</ruleset>
+
+<ruleset message="j-palatalization" desc="Velars are palatalized before j">
+	<rule pat="z([ln])j" replace="ž\1j"></rule>
+	<rule pat="s([ln])j" replace="š\1j"></rule>
+	<rule pat="drj" replace="zdr"></rule>
+	<rule pat="(s[kt]j|tj)" replace="št"></rule>
+	<rule pat="(z[gd]j|dj)" replace="žd"></rule>
+	<rule pat="kti" replace="šti"></rule>
+	<rule pat="kj" replace="č"></rule>
+	<rule pat="(gj|zj)" replace="ž"></rule>
+	<rule pat="(xj|sj)" replace="š"></rule>
+</ruleset>
+
+<ruleset message="Ending narrowing">
+	<rule pat="o(/?)s$" replace="u\1s"></rule>
+	<rule pat="je(/?)s$" replace="ji\1s"></rule>
+</ruleset>
+
+<ruleset message="o/a > o, ō/ā > a">
+	<rule pat="a" replace="o"></rule>
+	<rule pat="(ō|ā)" replace="a"></rule>
+</ruleset>
+
+<ruleset message="Shorten i/u to 'jers'">
+	<rule pat="^u([ptkbdglmnrszxjv]|č|ž|š)" replace="vu\1"></rule>
+	<rule pat="^i([ptkbdglmnrszxjv]|č|ž|š)" replace="ji\1"></rule>
+	<rule pat="([ptkbdglmnrszxjv]|č|ž|š)i" replace="\1ĭ"></rule>
+	<rule pat="([ptkbdglmnrszxjv]|č|ž|š)u" replace="\1ŭ"></rule>
+</ruleset>
+
+<ruleset message="Monophthongization">
+	<rule pat="oi(/?)$" replace="i\1"></rule>
+	<rule pat="oi(/?[^aeiouāēīōūĭŭ])" replace="ē\1"></rule>
+	<rule pat="ei(/?[^aeiouāēīōūĭŭ])?" replace="i\1"></rule>
+	<rule pat="ou(/?[^aeiouāēīōūĭŭ])?" replace="u\1"></rule>
+	<rule pat="eu(/?[^aeiouāēīōūĭŭ])?" replace="ju\1"></rule>
+	<rule pat="oi(/?[aeiouāēīōūĭŭ])?" replace="oj\1"></rule>
+	<rule pat="ai(/?[aeiouāēīōūĭŭ])?" replace="i\1"></rule>
+	<rule pat="o(/?)u([aeiouāēīōūĭŭ])?" replace="o\1v\2"></rule>
+</ruleset>
+
+<ruleset message="Contract long vowels">
+	<rule pat="ē" replace="ĕ"></rule>
+	<rule pat="ū(/?)([aeiouāēīōūĭŭ])" replace="ŭ\1v\2"></rule>
+	<rule pat="ū" replace="y"></rule>
+	<rule pat="ī" replace="i"></rule>
+</ruleset>
+
+<ruleset message="Second palatalization" desc="Velars are palatalized before new front vowels (old diphthongs)">
+	<rule pat="k(v)?([iĕ])" replace="c\1\2"></rule>
+	<rule pat="g(v)?([iĕ])" replace="z\1\2"></rule>
+	<rule pat="x(v)?([iĕ])" replace="s\1\2"></rule>
+</ruleset>
+
+<ruleset message="Progressive palatalization" desc="Velars are palatalized after front vowels">
+	<rule pat="([iĭę]/?)k" replace="\1c"></rule>
+	<rule pat="((i|ĭ|ę)/?)g" replace="\1z"></rule>
+</ruleset>
+
+<ruleset message="Vowel fronting after j">
+	<rule pat="jo" replace="je"></rule>
+	<rule pat="jŭ" replace="jĭ"></rule>
+	<rule pat="io" replace="je"></rule>
+	<rule pat="iŭ" replace="jĭ"></rule>
+</ruleset>
+
+<ruleset message="Ending fronting after palatals">
+	<rule pat="co(/?[ms])$" replace="ce\1"></rule>
+	<rule pat="cŭ(/?[ms])$" replace="cĭ\1"></rule>
+	<rule pat="zo(/?[ms])$" replace="ce\1"></rule>
+	<rule pat="zŭ(/?[ms])$" replace="cĭ\1"></rule>
+</ruleset>
+
+<ruleset message="Pre-iotation">
+	<rule pat="^([eĕ])" replace="j\1"></rule>
+</ruleset>
+
+<ruleset message="Cluster simplification">
+	<rule pat="dt" replace="st"></rule>
+	<rule pat="([^b])dm" replace="\1m"></rule>
+	<rule pat="bd" replace="d"></rule>
+	<rule pat="bs" replace="ps"></rule>
+	<rule pat="ps" replace="s"></rule>
+	<rule pat="pn" replace="n"></rule>
+	<rule pat="ds" replace="s"></rule>
+	<rule pat="gs" replace="ks"></rule>
+	<rule pat="bt" replace="t"></rule>
+</ruleset>
+
+<ruleset message="Open Syllables">
+	<rule pat="[sm]$" replace=""></rule>
+	<rule pat="[ptkbdg]([ptkbdg]|$)" replace="\1"></rule>
+</ruleset>
+
+<ruleset message="Nasalization">
+	<rule pat="[ao](/?)[mn]([bgdkptmnszlrnt]|nt)?$" replace="ǫ\1"></rule>
+	<rule pat="(?:e|u|i|ĭ|ŭ)(/?)[mn]([bgdkptmnszlrnt]|nt)?$" replace="ę\1"></rule>
+	<rule pat="[ao](/?)[mn]([bgdkptmnszlr])" replace="ǫ\1\2"></rule>
+	<rule pat="(?:e|u|i|ĭ|ŭ)(/?)[mn]([bgdkptmnszlr])" replace="ę\1\2"></rule>
+</ruleset>
+
+<ruleset message="Liquid metathesis">
+	<rule pat="([l|r])\." replace="\1ŭ"></rule>
+	<rule pat="([ptkbdglmnrszxjv]|č|ž|š)([oŭĭ]/?)([rl])([ptkbdglmnrszxjv]|č|ž|š)" replace="\1\3\2\4"></rule>
+	<rule pat="^([oa])(/?)([rl])([ptkbdglmnrszxjv]|č|ž|š)" replace="\3a\2\4"></rule>
+</ruleset>
+
+<ruleset message="Jer glides">
+	<rule pat="ĭ(/?)j" replace="i\1"></rule>	
+	<rule pat="ŭ(/?)j" replace="y\1"></rule>
+	<rule pat="jĭ" replace="i"></rule>
+</ruleset>
+
+<ruleset message="Projected Cyrillic spelling">
+	<rule pat="/" replace=""></rule>
+	<rule pat="je" replace="ѥ"></rule>
+	<rule pat="jǫ" replace="ѭ"></rule>
+	<rule pat="ję" replace="ѩ"></rule>
+	<rule pat="št" replace="щ"></rule>
+	<rule pat="ju" replace="ю"></rule>
+	<rule pat="ja" replace="іа"></rule>
+	<rule pat="a" replace="а"></rule>
+	<rule pat="b" replace="б"></rule>
+	<rule pat="d" replace="д"></rule>
+	<rule pat="e" replace="е"></rule>
+	<rule pat="g" replace="г"></rule>
+	<rule pat="i" replace="и"></rule>
+	<rule pat="k" replace="к"></rule>
+	<rule pat="l" replace="л"></rule>
+	<rule pat="m" replace="м"></rule>
+	<rule pat="n" replace="н"></rule>
+	<rule pat="o" replace="о"></rule>
+	<rule pat="p" replace="п"></rule>
+	<rule pat="r" replace="р"></rule>
+	<rule pat="s" replace="с"></rule>
+	<rule pat="t" replace="т"></rule>
+	<rule pat="u" replace="ѹ"></rule>
+	<rule pat="v" replace="в"></rule>
+	<rule pat="y" replace="ы"></rule>
+	<rule pat="z" replace="з"></rule>
+	<rule pat="ę" replace="ѧ"></rule>
+	<rule pat="ą" replace="ѫ"></rule>
+	<rule pat="č" replace="ч"></rule>
+	<rule pat="c" replace="ц"></rule>
+	<rule pat="š" replace="ш"></rule>
+	<rule pat="ž" replace="ж"></rule>
+	<rule pat="ĭ" replace="ь"></rule>
+	<rule pat="ŭ" replace="ъ"></rule>
+	<rule pat="ǫ" replace="ѫ"></rule>
+	<rule pat="x" replace="х"></rule>
+	<rule pat="ĕ" replace="ѣ"></rule>
+	<rule pat="jѣ" replace="іа"></rule>
+	<rule pat="j" replace=""></rule>
+</ruleset>
+
+
+</transducer>
