@@ -23,7 +23,7 @@
 </ruleset>
 
 <ruleset message="Vocalize syllabic laryngeals">
-	<rule pat="([^aeo])(H|h[1-3])(/?[^aeo])" replace="\1a\3"></rule>
+	<rule pat="([^aeo])(H|h[2-3])(/?[^aeo])" replace="\1a\3"></rule>
 </ruleset>
 
 
@@ -216,8 +216,8 @@
 
 <ruleset message="Velar palatlization">
 	<rule pat="(e|ē|i|ī)g" replace="\1ǥ"></rule>
-	<rule pat="(g|ǥ)(e|ē|i|ī)" replace="j\2"></rule>
-	<rule pat="k(e|ē|i|ī)" replace="č\1"></rule>
+	<rule pat="(g|ǥ)(e|ē|i|ī|j)" replace="j\2"></rule>
+	<rule pat="k(e|ē|i|ī|j)" replace="č\1"></rule>
 </ruleset>
 
 <ruleset message="Voice intervocal s">
@@ -242,6 +242,10 @@
 	<rule pat="hw" replace="hw"></rule>
 </ruleset>
 
+<ruleset message="Occlude dental spirant after nasal - nþ &gt; nd">
+	<rule pat="nþ" replace="nd"></rule>
+</ruleset>-->
+
 <ruleset message="Vowel lengthening" desc="Vowels are lengthened in open syllables of polysyllabic words, or before certain consonant clusters">
 	<rule pat="(^|[ptkbdghlmnrszjw]|č|š|þ)a(/?([aeo]|ā|ē|ō|y))" replace="\1ā\2"></rule>
 	<rule pat="(^|[ptkbdghlmnrszjw]|č|š|þ)e(/?([aeo]|ā|ē|ō|y))" replace="\1ē\2"></rule>
@@ -251,7 +255,7 @@
 	<rule pat="(^|[ptkbdghlmnrszjw]|č|š|þ)a(/?(ld|nd|mb|rd)([aeiou]|$))" replace="\1ā\2"></rule>
 	<rule pat="(^|[ptkbdghlmnrszjw]|č|š|þ)e(/?(ld|nd|mb|rd)([aeiou]|$))" replace="\1ē\2"></rule>
 	<rule pat="(^|[ptkbdghlmnrszjw]|č|š|þ)o(/?(ld|nd|mb|rd)([aeiou]|$))" replace="\1ǭ\2"></rule>
-	<rule pat="(^|[ptkbdghlmnrszjw]|č|š|þ)i(/?(ld|nd|mb|rd)([aeiou]|$))" replace="\1ī\2"></rule>
+	<rule pat="(^|[fptkbdghlmnrszjw]|č|š|þ)i(/?(ld|nd|mb|rd|nþ)([aeiou]|$))" replace="\1ī\2"></rule>
 	<rule pat="(^|[ptkbdghlmnrszjw]|č|š|þ)u(/?(ld|nd|mb|rd)([aeiou]|$))" replace="\1ū\2"></rule>
 	<rule pat="(^|[ptkbdghlmnrszjw]|č|š|þ)a(/?(č|š|þ|[ptkbdghlmnrsz])([aeiou]|ā|ē|ī|ō|ū|y)+(č|š|þ|[ptkbdghlmnrsz])*)$" replace="\1ā\2"></rule>
 	<rule pat="(^|[ptkbdghlmnrszjw]|č|š|þ)e(/?(č|š|þ|[ptkbdghlmnrsz])([aeiou]|ā|ē|ī|ō|ū|y)+(č|š|þ|[ptkbdghlmnrsz])*)$" replace="\1ē\2"></rule>
@@ -266,7 +270,7 @@
 	<rule pat="ē(/?)(pt|mt|ldr|(č|š|þ|[ptkbdgszh])(č|š|þ|[ptkbdgszh]))" replace="e\1\2"></rule>
 	<rule pat="ī(/?)(pt|mt|ldr|(č|š|þ|[ptkbdgszh])(č|š|þ|[ptkbdgszh]))" replace="i\1"></rule>
 	<rule pat="(ō|ǭ|Ö)(/?)(pt|mt|ldr)" replace="o\2\3"></rule>
-	<rule pat="(Ö|ō|ǭ)(/?)(č|š|þ)(.)" replace="o\2\3\4"></rule>
+	<rule pat="(Ö|ō|ǭ)(/?)(č|š|þ)([^aeiouāēīōūy])" replace="o\2\3\4"></rule>
 	<rule pat="(ō|ǭ|Ö)(/?)([ptkbdgszh][ptkbdgszh]+)" replace="o\2\3"></rule>
 	<rule pat="ū(/?)(pt|mt|ldr|(č|š|þ|[ptkbdgszh])(č|š|þ|[ptkbdgszh]))" replace="u\1\2"></rule>
 	<rule pat="ā(/?)(pt|mt|ldr|(č|š|þ|[ptkbdgszh])(č|š|þ|[ptkbdgszh]))" replace="a\1\2"></rule>
@@ -294,7 +298,7 @@
 	<rule pat="der$" replace="đer"></rule>
 </ruleset>
 
-<ruleset message="Voice intervocal þ">
+<ruleset message="Voice intervocalic þ">
 	<rule pat="([aeiou]|ā|ē|ī|ǭ|ō|ū|y|ʌ)(/?)þ([aeiou]|ā|ē|ī|ǭ|ō|ū|y|ʌ)" replace="\1\2đ\3"></rule>
 </ruleset>
 

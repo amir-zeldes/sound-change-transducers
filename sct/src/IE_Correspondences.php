@@ -151,7 +151,7 @@ If you're trying to find the proto-form of a word in one of the modern languages
     <td valign="top" class="UniFontTab">z </td>
     <td valign="top" class="UniFontTab">g </td>
     <td valign="top" class="UniFontTab">k, <a class='hintTab' href='#'><span class='noteTab'><?php echo AddLinks('before front vowels'); ?> </span>č</a> </td>
-    <td valign="top" class="UniFontTab">k </td>
+    <td valign="top" class="UniFontTab"><a class='hintTab' href='#'><span class='noteTab'><?php echo AddLinks('word initially in Standard German, but /kx/ in Swiss'); ?> </span>k</a>, x </td>
   </tr>
   <tr>
     <td valign="top" class="UniFontTab">*g&#833;<sup>h</sup> </td>
@@ -160,7 +160,7 @@ If you're trying to find the proto-form of a word in one of the modern languages
     <td valign="top" class="UniFontTab">z </td>
     <td valign="top" class="UniFontTab">g, <a class='hintTab' href='#'><span class='noteTab'><?php echo AddLinks('between vowels and initially'); ?> </span>h</a> </td>
     <td valign="top" class="UniFontTab">g, <a class='hintTab' href='#'><span class='noteTab'><?php echo AddLinks('before or after front vowels'); ?> </span>y</a> </td>
-    <td valign="top" class="UniFontTab">k, <a class='hintTab' href='#'><span class='noteTab'><?php echo AddLinks('between vowels, spelled ch'); ?> </span>x</a> </td>
+    <td valign="top" class="UniFontTab"><a class='hintTab' href='#'><span class='noteTab'><?php echo AddLinks('only some words in Standard German, e.g. Gans'); ?> </span>g</a>, <a class='hintTab' href='#'><span class='noteTab'><?php echo AddLinks('only some words in Standard German, e.g. R&uuml;cken'); ?> </span>k</a>, <a class='hintTab' href='#'><span class='noteTab'><?php echo AddLinks('between vowels, spelled ch'); ?> </span>x</a> </td>
   </tr>
   <tr bgcolor="#EEEEEE">
     <td valign="top" class="UniFontTab">*k</td>
