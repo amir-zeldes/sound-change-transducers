@@ -548,6 +548,6 @@ echo "</table>";
 if ($root_final!="")
 {echo "See this root in other languages:<br><ul>" . $root_final . "</ul>";} ?>
 <br>
-&copy; 2008 - 2009 <a href="http://corpling.uis.georgetown.edu/amir">Amir Zeldes </a>
+&copy; <a href="https://gucorpling.org/amir">Amir Zeldes </a>
 </body>
 </html>
